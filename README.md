@@ -2,10 +2,6 @@
 
 A fast, responsive, and full-stack photo gallery web application built with the **MERN Stack**: **React 19**, **Node.js**, **Express**, **MongoDB Atlas (Mongoose)**, and **CSS3**. SnapSphere features public gallery exploration, high-resolution photo inspection, instant downloads, user collections, and an **Administration Dashboard** with user and photographer tracking.
 
-Developed and maintained by **[Adil Mairaj](https://github.com/adilmairaj-dev)**.
-
----
-
 ## ✨ Key Features
 
 ### 👤 User Features
@@ -124,7 +120,6 @@ npm test
 
 **Adil Mairaj**
 - GitHub: [@adilmairaj-dev](https://github.com/adilmairaj-dev)
-- Email: contact.adil.mairaj@gmail.com
 
 ---
 
