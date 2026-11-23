@@ -882,7 +882,7 @@ function AdminPage({
               }}
             >
               <span style={{ fontSize: "0.78rem", color: "var(--muted)" }}>
-                ⚡ Ready for backend API & database sync in next phase
+                Total {registeredUsers.length} registered {registeredUsers.length === 1 ? "user" : "users"} recorded
               </span>
               <button
                 type="button"
