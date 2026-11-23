@@ -2,6 +2,59 @@
 
 A fast, responsive, and full-stack photo gallery web application built with the **MERN Stack**: **React 19**, **Node.js**, **Express**, **MongoDB Atlas (Mongoose)**, and **CSS3**. SnapSphere features public gallery exploration, high-resolution photo inspection, instant downloads, user collections, and an **Administration Dashboard** with user and photographer tracking.
 
+---
+
+## 📸 Application Showcase & Screenshots
+
+### 🌟 1. Explore Gallery & Photo Details
+Explore high-resolution curated photography with instant live search, instant category pills, and deep detail inspection.
+
+| Gallery Home (Dark Mode & Filters) | Photo Detail Page (Metadata & Likes) |
+|:---:|:---:|
+| ![Gallery Home](docs/screenshots/gallery-home.jpg) | ![Photo Detail](docs/screenshots/photo-detail.jpg) |
+
+---
+
+### 🛡️ 2. Comprehensive Admin Dashboard
+Monitor platform statistics in real time, filter catalog items, sort records, and manage gallery items directly.
+
+| Admin Dashboard (Analytics & Photo Management) | Real-Time Category Filtering |
+|:---:|:---:|
+| ![Admin Dashboard](docs/screenshots/admin-dashboard.jpg) | ![Category Filter](docs/screenshots/admin-categories-dropdown.jpg) |
+
+---
+
+### 👥 3. Interactive Modals: Users & Photographers
+Track active registered community members and spotlight featured photographers across global locations.
+
+| Our Users Modal | Our Photographers Modal |
+|:---:|:---:|
+| ![Our Users](docs/screenshots/our-users-modal.png) | ![Our Photographers](docs/screenshots/our-photographers-modal.jpg) |
+
+---
+
+### 🎨 4. Add & Edit Photo Workflows
+Add new photos or edit existing photo details with real-time URL image validation and responsive modal scrolling.
+
+| Add New Photo Modal | Edit Photo Details Modal |
+|:---:|:---:|
+| ![Add Photo](docs/screenshots/add-photo-modal.png) | ![Edit Photo](docs/screenshots/edit-photo-modal.jpg) |
+
+---
+
+### 🔐 5. Authentication & Personalized Collection
+Unified login switcher for standard Users and credentialed Administrators, paired with individual collections of liked and favourited shots.
+
+| Unified Login Portal | User Profile & Navigation |
+|:---:|:---:|
+| ![Unified Login](docs/screenshots/login-portal.png) | ![User Dropdown](docs/screenshots/user-dropdown.png) |
+
+| My Collection Page (Liked & Favourites) |
+|:---:|
+| ![My Collection](docs/screenshots/my-collection.jpg) |
+
+---
+
 ## ✨ Key Features
 
 ### 👤 User Features
@@ -50,6 +103,9 @@ snap-sphere/
 │   ├── .env.example            # Environment template
 │   ├── package.json            # Backend scripts and dependencies
 │   └── .gitignore
+│
+├── docs/                       # 📸 Application Documentation & Screenshots
+│   └── screenshots/
 │
 ├── .gitignore                  # Root gitignore
 ├── LICENSE                     # MIT License
