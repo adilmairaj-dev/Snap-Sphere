@@ -1,11 +1,3 @@
-# SnapSphere — Source Code Documentation & Project Report
-
-> **Project:** SnapSphere (Photo Gallery & Management Platform)  
-> **Author:** Adil Mairaj ([@adilmairaj-dev](https://github.com/adilmairaj-dev))  
-> **Architecture:** MERN Stack (React 19 Frontend + Express & MongoDB Backend)
-
----
-
 # 🌐 FRONTEND (CLIENT)
 
 ---
