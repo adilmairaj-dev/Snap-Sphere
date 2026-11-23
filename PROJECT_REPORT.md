@@ -1,7 +1,18 @@
-FRONTEND (CLIENT)
+# SnapSphere — Source Code Documentation & Project Report
 
-1. package.json
+> **Project:** SnapSphere (Photo Gallery & Management Platform)  
+> **Author:** Adil Mairaj ([@adilmairaj-dev](https://github.com/adilmairaj-dev))  
+> **Architecture:** MERN Stack (React 19 Frontend + Express & MongoDB Backend)
 
+---
+
+# 🌐 FRONTEND (CLIENT)
+
+---
+
+### 1. package.json
+
+```json
 {
   "name": "snap-sphere",
   "version": "0.1.0",
@@ -47,8 +58,9 @@ FRONTEND (CLIENT)
 
 ---
 
-2. client/src/App.jsx
+### 2. App.jsx
 
+```jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
@@ -307,10 +319,13 @@ function App() {
 }
 
 export default App;
+```
 
+---
 
-3. ImageCard.jsx
+### 3. ImageCard.jsx
 
+```jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { downloadImage } from "../utils/downloadHelper";
@@ -460,8 +475,9 @@ export default ImageCard;
 
 ---
 
-4. GalleryPage.jsx
+### 4. GalleryPage.jsx
 
+```jsx
 import React, { useState } from "react";
 import FilterBar from "../components/FilterBar";
 import ImageCard from "../components/ImageCard";
@@ -503,6 +519,7 @@ function GalleryPage({
   const handleAddPhoto = (e) => {
     e.preventDefault();
     setFormError("");
+
     if (!formData.title || !formData.src || !formData.photographer || !formData.location) {
       setFormError("Please fill out all required fields.");
       return;
@@ -765,12 +782,15 @@ function GalleryPage({
 export default GalleryPage;
 ```
 
-🚀 BACKEND (SERVER)
+---
+
+# 🚀 BACKEND (SERVER)
 
 ---
 
-1. package.json
+### 1. package.json
 
+```json
 {
   "name": "server",
   "version": "1.0.0",
@@ -796,7 +816,7 @@ export default GalleryPage;
 
 ---
 
-### 2. server.js`
+### 2. server.js
 
 ```javascript
 require("dotenv").config();
