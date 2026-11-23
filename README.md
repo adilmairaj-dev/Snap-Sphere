@@ -1,164 +1,179 @@
-# SnapSphere 📸 — Modern Responsive Photo Gallery & Management Platform (MERN)
+# 📸 SnapSphere — Curated Photo Gallery & Management Platform (MERN)
 
-A fast, responsive, and full-stack photo gallery web application built with the **MERN Stack**: **React 19**, **Node.js**, **Express**, **MongoDB Atlas (Mongoose)**, and **CSS3**. SnapSphere features public gallery exploration, high-resolution photo inspection, instant downloads, user collections, and an **Administration Dashboard** with user and photographer tracking.
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+A modern, fast, and responsive full-stack photo gallery web application designed for photographers and visual storytellers. Built with the **MERN Stack** (**React 19**, **Node.js**, **Express**, **MongoDB Atlas / Mongoose**, and **CSS3**), **SnapSphere** pairs an immersive exploration experience for users with a powerful administrative dashboard for catalog maintenance, live metric tracking, and user management.
 
 ---
 
-## 📸 Application Showcase & Screenshots
+## 👨‍💻 Author
 
-### 🌟 1. Explore Gallery & Photo Details
-Explore high-resolution curated photography with instant live search, instant category pills, and deep detail inspection.
+**Adil Mairaj**  
+* GitHub: [@adilmairaj-dev](https://github.com/adilmairaj-dev)
+* Repository: [Snap-Sphere](https://github.com/adilmairaj-dev/Snap-Sphere)
 
-| Gallery Home (Dark Mode & Filters) | Photo Detail Page (Metadata & Likes) |
-|:---:|:---:|
+---
+
+## ✨ Features
+
+### 👤 Customer & Visitor Experience
+* **Curated Gallery Grid**: High-resolution photography presented in an adaptive responsive grid with fluid hover interactions and metadata overlays.
+* **Real-time Live Search**: Instant multi-attribute search filtering photos on-the-fly by title, photographer, location, and description.
+* **Category Exploration**: Quick category filter pills covering **All**, **Nature**, **Architecture**, **Animals**, **People**, and **Travel**.
+* **Deep Photo Inspection (`/photo/:id`)**: Comprehensive detail view featuring high-res previews, photographer information, shot location, like counters, direct high-speed image downloads, and curated "More in Category" recommendations.
+* **Instant Likes & Favourites**: Toggle likes with immediate community count feedback and save shots to your personal favorites.
+* **My Collection (`/collection`)**: Dedicated user collection space featuring categorized tabs to browse *Total Liked Photos* and *Favourites Saved*.
+* **Dark & Light Mode Switcher**: Seamless theme switcher with persistent session storage and custom CSS design tokens.
+
+### 🛡️ Administration Dashboard (`/admin`)
+* **Real-time Platform Metrics**:
+  * **Total Gallery Photos**: Live catalog count across all categories.
+  * **👥 Our Users Modal**: Interactive modal listing registered user emails, active status indicators, and session timestamps.
+  * **📸 Photographers Modal**: Artist directory showcasing unique photographers, location tags, total community likes, and an interactive horizontal preview reel.
+  * **👍 Total Likes**: Aggregate community engagement tally across the entire catalog.
+* **Catalog Management Table**:
+  * Multi-attribute search and category filtering directly within the admin view.
+  * Multi-directional sorting (**Newest Added**, **Oldest Added**, **Most Liked**, **Title A-Z / Z-A**).
+  * Direct table actions: View in Gallery, Edit details, and one-click Delete.
+  * Responsive view switcher (**Auto**, **Table View**, **Cards View**) with customized horizontal scrolling.
+* **Add & Edit Photo Workflows**:
+  * Live URL validation with real-time preview before publishing.
+  * Smooth modal scrollbar with overflow control for clean usability across all screen heights.
+
+---
+
+## 📸 Application Screenshots
+
+### 🌟 Customer Experience & Public Gallery
+| 01. Gallery Home (Dark Mode & Filters) | 02. Photo Detail Page (Metadata & Likes) |
+| :---: | :---: |
 | ![Gallery Home](docs/screenshots/gallery-home.jpg) | ![Photo Detail](docs/screenshots/photo-detail.jpg) |
 
----
-
-### 🛡️ 2. Comprehensive Admin Dashboard
-Monitor platform statistics in real time, filter catalog items, sort records, and manage gallery items directly.
-
-| Admin Dashboard (Analytics & Photo Management) | Real-Time Category Filtering |
-|:---:|:---:|
-| ![Admin Dashboard](docs/screenshots/admin-dashboard.jpg) | ![Category Filter](docs/screenshots/admin-categories-dropdown.jpg) |
-
----
-
-### 👥 3. Interactive Modals: Users & Photographers
-Track active registered community members and spotlight featured photographers across global locations.
-
-| Our Users Modal | Our Photographers Modal |
-|:---:|:---:|
-| ![Our Users](docs/screenshots/our-users-modal.png) | ![Our Photographers](docs/screenshots/our-photographers-modal.jpg) |
-
----
-
-### 🎨 4. Add & Edit Photo Workflows
-Add new photos or edit existing photo details with real-time URL image validation and responsive modal scrolling.
-
-| Add New Photo Modal | Edit Photo Details Modal |
-|:---:|:---:|
-| ![Add Photo](docs/screenshots/add-photo-modal.png) | ![Edit Photo](docs/screenshots/edit-photo-modal.jpg) |
-
----
-
-### 🔐 5. Authentication & Personalized Collection
-Unified login switcher for standard Users and credentialed Administrators, paired with individual collections of liked and favourited shots.
-
-| Unified Login Portal | User Profile & Navigation |
-|:---:|:---:|
+| 03. Unified Login Portal | 04. User Profile & Navigation Menu |
+| :---: | :---: |
 | ![Unified Login](docs/screenshots/login-portal.png) | ![User Dropdown](docs/screenshots/user-dropdown.png) |
 
-| My Collection Page (Liked & Favourites) |
-|:---:|
+| 05. My Collection (Liked & Favourites) |
+| :---: |
 | ![My Collection](docs/screenshots/my-collection.jpg) |
 
----
+### 🛡️ Administration & Catalog Management
+| 06. Live Admin Dashboard & Metrics | 07. Real-Time Category Filtering |
+| :---: | :---: |
+| ![Admin Dashboard](docs/screenshots/admin-dashboard.jpg) | ![Category Filter](docs/screenshots/admin-categories-dropdown.jpg) |
 
-## ✨ Key Features
+| 08. Registered Users Modal | 09. Featured Photographers Modal |
+| :---: | :---: |
+| ![Our Users Modal](docs/screenshots/our-users-modal.png) | ![Our Photographers Modal](docs/screenshots/our-photographers-modal.jpg) |
 
-### 👤 User Features
-- **🖼️ Curated Photo Gallery**: High-quality imagery displayed in an adaptive responsive grid with smooth hover transitions.
-- **🔍 Real-Time Search**: Instant filtering by photo title, photographer name, location, and description.
-- **🏷️ Category Filtering**: Filter seamlessly between *All*, *Nature*, *Architecture*, *Travel*, *Animals*, *People*, and *Street*.
-- **⬇️ Instant Photo Downloads**: Direct high-resolution image downloads directly from gallery cards or detail pages.
-- **❤️ Favorites & Likes**: Save favorite shots and like photos with immediate visual feedback.
-- **📁 My Collection (`/collection`)**: Dedicated user space with interactive tabs to switch between *Total Liked Photos* and *Favourites Saved*.
-- **🌗 Dark / Light Mode**: System-aware theme toggle with persistent user preference across sessions.
-- **📄 Deep Photo Detail Page (`/photo/:id`)**: High-res display with complete metadata, photographer info, location, like counters, and related recommendations.
-
-### 🛡️ Administration Section (`/admin`)
-- **🔐 Unified Authentication Flow**: Tabbed role switcher supporting credentialed Admin access (`admin@bwu.edu` / `admin123`) and User access.
-- **📊 Real-Time Metric Cards**:
-  - **Total Gallery Photos**: Live count of all catalog items.
-  - **👥 Our Users**: Interactive modal listing registered user emails, active status badges, and login activity.
-  - **📸 Photographers**: Interactive modal showing unique artists, shot locations, total likes, and a horizontal gallery strip of their photos.
-  - **👍 Total Likes**: Aggregate community engagement across all photos.
-- **🔎 Table Search, Filter & Multi-Sort**: Search photos by title, photographer, or location, filter by category, and sort by Newest, Oldest, Most Liked, or Title (A-Z / Z-A).
-- **🖼️ Live Image Preview in Add/Edit Modal**: Instant URL preview with real-time image validation before publishing, featuring smooth modal scrolling on all devices.
-- **👁️ Quick "View in Gallery" Action**: Direct row links to inspect the public photo page in a new tab.
-- **📱 Responsive Mobile/Desktop UX**: Horizontal scrolling table for desktop and tablet screens, adaptive card grid for mobile devices, and a manual `Auto | Table | Cards` view switcher.
-
----
-
-## 📁 Architecture: Clean Client & Server
-
-The repository is organized into two completely independent, self-contained directories:
-
-```text
-snap-sphere/
-├── client/                     # ⚛️ React 19 Frontend Application
-│   ├── public/                 # Static assets, favicon, index.html
-│   ├── src/                    # Components, pages, styling, utils
-│   ├── package.json            # React frontend scripts and dependencies
-│   ├── package-lock.json
-│   └── .gitignore
-│
-├── server/                     # 🚀 Node.js + Express + MongoDB Backend API
-│   ├── models/                 # Mongoose schemas (Photo.js, User.js)
-│   ├── routes/                 # REST API endpoints (photoRoutes.js, authRoutes.js)
-│   ├── middleware/             # JWT auth & admin role verification (auth.js)
-│   ├── seedData.js             # Initial 16 gallery photos auto-seeder
-│   ├── server.js               # Express server entry point & DB connection
-│   ├── .env.example            # Environment template
-│   ├── package.json            # Backend scripts and dependencies
-│   └── .gitignore
-│
-├── docs/                       # 📸 Application Documentation & Screenshots
-│   └── screenshots/
-│
-├── .gitignore                  # Root gitignore
-├── LICENSE                     # MIT License
-└── README.md
-```
+| 10. Add New Photo Modal | 11. Edit Photo Details Modal |
+| :---: | :---: |
+| ![Add Photo Modal](docs/screenshots/add-photo-modal.png) | ![Edit Photo Modal](docs/screenshots/edit-photo-modal.jpg) |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [React 19](https://react.dev/), [React Router v6](https://reactrouter.com/)
-- **Backend**: [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)
-- **Database**: [MongoDB Atlas](https://www.mongodb.com/atlas) with [Mongoose](https://mongoosejs.com/)
-- **Authentication**: JSON Web Tokens (JWT) & bcrypt.js
-- **Styling**: Vanilla CSS3 with Custom Properties (Theme tokens, Grid, Flexbox, Animations)
-- **Testing**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+### Frontend
+* **Framework**: React 19 (SPA Architecture)
+* **Routing**: React Router v6
+* **Styling**: Vanilla CSS3 with Custom Properties (Theme tokens, CSS Grid, Flexbox, Keyframe Animations)
+* **Testing**: Jest & React Testing Library (100% passing test suite)
+
+### Backend
+* **Runtime**: Node.js (CommonJS)
+* **Framework**: Express.js
+* **Database**: MongoDB Atlas with Mongoose ODM
+* **Authentication**: JSON Web Tokens (JWT) & bcrypt.js password hashing
+* **Data Seeding**: Automatic initial seeder populating 16 curated high-resolution photography records
+
+---
+
+## 📂 Project Structure
+
+```text
+snap-sphere/
+├── client/                     # ⚛️ React 19 Frontend
+│   ├── public/                 # Static assets, index.html, favicon
+│   ├── src/
+│   │   ├── components/         # Navbar, Footer, Modals, Card views
+│   │   ├── pages/              # GalleryHome, PhotoDetail, AdminPage, MyCollection, Login
+│   │   ├── utils/              # Storage helpers, API utilities, download handler
+│   │   ├── App.jsx             # Main router & theme provider
+│   │   ├── App.css             # Design tokens & responsive styles
+│   │   └── App.test.js         # Comprehensive unit tests
+│   ├── package.json
+│   └── .gitignore
+│
+├── server/                     # 🚀 Node.js + Express Backend
+│   ├── middleware/             # JWT authentication & admin authorization guards
+│   ├── models/                 # Mongoose schemas (Photo.js, User.js)
+│   ├── routes/                 # REST API endpoints (photoRoutes.js, authRoutes.js)
+│   ├── seedData.js             # 16 Curated photos auto-seeder
+│   ├── server.js               # Express application entry & MongoDB connection
+│   ├── .env.example            # Sample environment variables
+│   ├── package.json
+│   └── .gitignore
+│
+├── docs/                       # 📸 Application Documentation & Screenshots
+│   └── screenshots/
+│
+├── .gitignore                  # Security-first root ignore rules (protects .env and secrets)
+├── LICENSE                     # MIT License
+└── README.md                   # Project documentation
+```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) (v16 or higher) and [npm](https://www.npmjs.com/) installed on your machine.
+### 1. Prerequisites
+* **Node.js**: v16 or higher
+* **npm**: v8 or higher
+* **MongoDB**: A local MongoDB instance or free [MongoDB Atlas](https://www.mongodb.com/atlas) cluster
 
-### Clone the Repository
-```bash
-git clone https://github.com/adilmairaj-dev/Snap-Sphere.git
-cd Snap-Sphere
-```
-
----
-
-### Running the Application
-
-Open two terminal tabs:
-
-#### 1. Frontend (Client)
-```bash
-cd client
-npm install
-npm start
-```
-- Local URL: **`http://localhost:3000`**
-
-#### 2. Backend (Server)
+### 2. Backend Setup
 ```bash
 cd server
 npm install
+
+# Configure environment variables
+cp .env.example .env
+# Edit server/.env and add your MONGO_URI and JWT_SECRET
+
+# Seed catalog & start server
+node seedData.js
 npm start
-# or during development with live reload:
+# or with live reload:
 npm run dev
 ```
-- API URL: **`http://localhost:5000`**
+The backend API server runs on `http://localhost:5000`.
+
+### 3. Frontend Setup
+```bash
+cd client
+npm install
+
+# Start React development server
+npm start
+```
+Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## 🔐 Environment Variables (`server/.env`)
+
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/snapsphere
+JWT_SECRET=your_jwt_secret_key_here
+ADMIN_EMAIL=admin@bwu.edu
+ADMIN_PASSWORD=admin123
+```
 
 ---
 
@@ -172,12 +187,6 @@ npm test
 
 ---
 
-## 👨‍💻 Author
-
-**Adil Mairaj**
-- GitHub: [@adilmairaj-dev](https://github.com/adilmairaj-dev)
-
----
-
 ## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
+
+This project is licensed under the [MIT License](LICENSE) — created by **Adil Mairaj**.
